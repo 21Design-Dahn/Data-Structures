@@ -38,6 +38,7 @@ int main(){
 
   auto concat = Concat(list, list2);
   concat.Delete(0);
+  concat.Insert(1,22);
   concat.Print();
 
   std::cin.get();
