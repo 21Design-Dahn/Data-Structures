@@ -4,6 +4,11 @@ This is my **own** implementations of most known data structures using c++ as th
 
 References or resources:
 - Array : [ARRAY - Making DATA STRUCTURES in C++](https://www.youtube.com/watch?v=TzB5ZeKQIHM&t=804s)
+- Binary Search Tree :
+  - [Binary Search Tree | Set 1 (Search and Insertion)](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
+  - [Binary Search Tree | Set 2 (Delete)](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/?ref=lbp)
+  - [Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer](https://www.youtube.com/watch?v=RBSGKlAvoiM&t=3833s)
+  - [Data Structure & Algorithms - Tree Traversal](https://www.tutorialspoint.com/data_structures_algorithms/tree_traversal.htm)
 - Linked List : [C++ : Linked lists in C++ (Singly linked list)](https://www.codesdope.com/blog/article/c-linked-lists-in-c-singly-linked-list/)
 - Doubly Linked List : [C++ Program to Implement Doubly Linked List](https://www.tutorialspoint.com/cplusplus-program-to-implement-doubly-linked-list#:~:text=Doubly%20linked%20list%20is%20a,to%20the%20previous%20list%20node.)
 - Dynamic Array: 
