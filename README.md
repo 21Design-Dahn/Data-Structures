@@ -6,6 +6,10 @@ References or resources:
 
 - Array : [ARRAY - Making DATA STRUCTURES in C++](https://www.youtube.com/watch?v=TzB5ZeKQIHM&t=804s)
 
+- AVL Tree :
+  -[Definition of a Balanced Tree](https://stackoverflow.com/questions/8015630/definition-of-a-balanced-tree)
+  - [Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer](https://www.youtube.com/watch?v=RBSGKlAvoiM&t=3833s)
+
 - Binary Heap :
   - [Binary Heap](https://www.geeksforgeeks.org/binary-heap/)
   - [Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer](https://www.youtube.com/watch?v=RBSGKlAvoiM&t=3833s)
