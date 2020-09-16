@@ -55,6 +55,16 @@ class AVLTree{
       return false;
     }
 
+    bool Remove(T value){
+      if(contains(root, value)){
+        root = remove(root, value);
+        nodeCount--;
+        return true;
+      }
+
+      return false;
+    }
+
     bool Contains(T value) const { return contains(root, value); }
     unsigned int GetNodeCount() const { return GetNodeCount; }
     unsigned int GetHeight() const {
@@ -89,6 +99,37 @@ class AVLTree{
         n->right = insert(n->right, value);
       }
 
+      update(n);
+      return balance(n);
+    }
+
+    Node<T>* remove(Node<T>* n, T value){
+      if(n = nullptr){ return nullptr; }
+
+      int cmp = n->value > value ? -1 : 1;
+      if(cmp < 0){ 
+        n->left = remove(n->left, value);
+      } else if(cmp > 0){
+        n->right = remove(n->left, value);
+      } else {
+
+        if(n->left == nullptr) { return n->right; }
+        else if(n->right == nullptr) { return n->left; }
+        else {
+          if(n->left->height > n->right->height){
+            T successorValue = findMax(n->left);
+            n->value = successorValue;
+
+            n->left = remove(n->left, successorValue);
+          } else {
+            T successorValue = findMin(n->right);
+            n->value = successorValue;
+
+            n->right = remove(n->right, successorValue);
+          }
+        }
+      }
+      
       update(n);
       return balance(n);
     }
@@ -154,6 +195,16 @@ class AVLTree{
     Node<T>* rightLeftCase(Node<T>* n){
       n->right = rightRotate(n->right);
       return rightRightCase(n);
+    }
+
+    T findMax(Node<T>* n){
+      while(n->right != nullptr) { n = n->right; }
+      return n->value;
+    }
+
+    T findMin(Node<T>* n){
+      while(n->left != nullptr){ n = n->left; }
+      return n->value;
     }
   private:
     Node<T>* root = nullptr;
